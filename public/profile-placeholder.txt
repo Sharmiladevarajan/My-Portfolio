@@ -1,0 +1,4 @@
+// Placeholder for profile image - replace with actual image
+export default function ProfileImage() {
+  return null;
+}
