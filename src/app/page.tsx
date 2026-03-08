@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-blue-950">
+        <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
         <Hero />
         <About />
         <Experience />
         <Skills />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </>
   );

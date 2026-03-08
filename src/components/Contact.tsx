@@ -80,16 +80,15 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-16 px-4 bg-slate-50 dark:bg-slate-950">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Get In Touch
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            Get in touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mt-6 max-w-3xl mx-auto">
-            I'm always excited to discuss new opportunities, innovative projects, or potential collaborations. 
-            Let's connect and explore how we can work together!
+          <div className="w-12 h-0.5 bg-slate-300 dark:bg-slate-600 mx-auto"></div>
+          <p className="text-sm text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
+            Open to SDE and GenAI Engineer roles. Happy to discuss opportunities, projects, or technical collaboration.
           </p>
         </div>
 
@@ -97,24 +96,24 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
-              <div className="space-y-4">
+              <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Contact</h3>
+              <div className="space-y-2">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div className="text-purple-600 dark:text-purple-400 mr-4">
+                  <div key={index} className="flex items-center p-3 bg-white dark:bg-slate-800/80 rounded-lg border border-slate-200 dark:border-slate-700">
+                    <div className="text-slate-500 dark:text-slate-400 mr-3">
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-white">{info.title}</h4>
+                      <h4 className="font-medium text-slate-900 dark:text-white text-sm">{info.title}</h4>
                       {info.link ? (
                         <a 
                           href={info.link}
-                          className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+                          className="text-slate-700 dark:text-slate-300 hover:underline"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-gray-600 dark:text-gray-400">{info.value}</p>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm">{info.value}</p>
                       )}
                     </div>
                   </div>
@@ -124,7 +123,7 @@ export default function Contact() {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Connect With Me</h3>
+              <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Connect</h3>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a 
@@ -132,7 +131,7 @@ export default function Contact() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 transform hover:-translate-y-1"
+                    className="text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
                   >
                     {social.icon}
                   </a>
@@ -140,30 +139,25 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Call to Action */}
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Ready to collaborate?</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Whether you're looking for a skilled AI engineer, full-stack developer, or automation expert, 
-                I'm here to help bring your ideas to life.
+            {/* Recruiter CTA */}
+            <div className="bg-white dark:bg-slate-800/80 p-4 rounded-lg border border-slate-200 dark:border-slate-700">
+              <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Open to opportunities</h3>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
+                SDE and GenAI Engineer roles. Full-time or contract. Remote or hybrid (India).
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">
-                  Open to Opportunities
-                </span>
-                <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 rounded-full text-sm">
-                  Available for Freelance
-                </span>
+                <span className="px-2 py-1 text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded border border-slate-200 dark:border-slate-700">SDE & GenAI</span>
+                <span className="px-2 py-1 text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded border border-slate-200 dark:border-slate-700">Available</span>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Me a Message</h3>
+            <div className="bg-white dark:bg-slate-800/80 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+            <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-4">Send a message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Full Name
                 </label>
                 <input
@@ -173,13 +167,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-slate-400 focus:border-transparent dark:bg-slate-800 dark:text-white transition-colors"
                   placeholder="Your full name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Email Address
                 </label>
                 <input
@@ -189,13 +183,13 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-slate-400 focus:border-transparent dark:bg-slate-800 dark:text-white transition-colors"
                   placeholder="your.email@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Subject
                 </label>
                 <input
@@ -205,13 +199,13 @@ export default function Contact() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-slate-400 focus:border-transparent dark:bg-slate-800 dark:text-white transition-colors"
                   placeholder="What's this about?"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -221,14 +215,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-slate-400 focus:border-transparent dark:bg-slate-800 dark:text-white transition-colors resize-none"
                   placeholder="Tell me about your project or how we can collaborate..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 py-2.5 px-4 rounded-md font-medium text-sm hover:bg-slate-700 dark:hover:bg-slate-100 transition-colors"
               >
                 Send Message
               </button>
@@ -237,9 +231,9 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-gray-600 dark:text-gray-400">
-            © 2025 Sharmila Devarajan. Built with Next.js and Tailwind CSS.
+        <div className="text-center mt-12 pt-6 border-t border-slate-200 dark:border-slate-700">
+          <p className="text-slate-500 dark:text-slate-500 text-xs">
+            © 2025 Sharmila Devarajan · SDE & GenAI Engineer
           </p>
         </div>
       </div>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sharmila Devarajan - AI Engineer & Full Stack Developer",
-  description: "Experienced Software Engineer with 2.5+ years building scalable AI-driven and agentic automation platforms. Skilled in designing intelligent workflows, developing adaptive multi-agent systems, and creating robust full-stack applications.",
-  keywords: "AI Engineer, Full Stack Developer, Software Engineer, Machine Learning, Multi-Agent Systems, Automation, Next.js, Python, TypeScript",
+  title: "Sharmila Devarajan | SDE & GenAI Engineer",
+  description: "Sharmila Devarajan — SDE & GenAI Engineer, 3+ years. Production experience in RAG, multi-agent systems, Temporal, and full-stack (Next.js, Nest, Python). Built MultiRAG at Impelox; open to opportunities.",
+  keywords: "Software Engineer, GenAI Engineer, RAG, Multi-Agent, Temporal, Next.js, NestJS, Python, OpenAI, Claude, Impelox",
   authors: [{ name: "Sharmila Devarajan" }],
   creator: "Sharmila Devarajan",
   metadataBase: new URL('https://sharmila-portfolio.vercel.app'),
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     shortcut: '/profile.png',
   },
   openGraph: {
-    title: "Sharmila Devarajan - AI Engineer & Full Stack Developer",
-    description: "Experienced Software Engineer specializing in AI-driven automation platforms and full-stack development",
+    title: "Sharmila Devarajan | SDE & GenAI Engineer",
+    description: "3+ years building GenAI, RAG, and agentic automation. SDE & GenAI Engineer specializing in scalable AI and full-stack development.",
     url: 'https://sharmila-portfolio.vercel.app',
     siteName: 'Sharmila Devarajan Portfolio',
     locale: 'en_US',
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sharmila Devarajan - AI Engineer & Full Stack Developer",
-    description: "Experienced Software Engineer specializing in AI-driven automation platforms and full-stack development",
+    title: "Sharmila Devarajan | SDE & GenAI Engineer",
+    description: "3+ years building GenAI, RAG, and agentic automation. SDE & GenAI Engineer.",
     creator: '@sharmishrini26',
     images: ['/profile.png'],
   },
