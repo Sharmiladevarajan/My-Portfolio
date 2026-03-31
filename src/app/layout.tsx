@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://sharmila-portfolio.vercel.app'),
   icons: {
     icon: [
-      { url: '/profile.png', sizes: '32x32', type: 'image/png' },
-      { url: '/profile.png', sizes: '16x16', type: 'image/png' }
+      { url: '/profile.jpeg', sizes: '32x32', type: 'image/png' },
+      { url: '/profile.jpeg', sizes: '16x16', type: 'image/png' }
     ],
-    apple: '/profile.png',
-    shortcut: '/profile.png',
+    apple: '/profile.jpeg',
+    shortcut: '/profile.jpeg',
   },
   openGraph: {
     title: "Sharmila Devarajan | SDE & GenAI Engineer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/profile.png',
+        url: '/profile.jpeg',
         width: 1200,
         height: 630,
         alt: 'Sharmila Devarajan - AI Engineer',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Sharmila Devarajan | SDE & GenAI Engineer",
     description: "3+ years building GenAI, RAG, and agentic automation. SDE & GenAI Engineer.",
     creator: '@sharmishrini26',
-    images: ['/profile.png'],
+    images: ['/profile.jpeg'],
   },
   robots: {
     index: true,
